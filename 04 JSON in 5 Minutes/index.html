@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON in 5 Minutes</title>
+  </head>
+  <body>
+    <h3>JSON in 5 Minutes</h3>
+
+    <script src="app.js"></script>
+    <script>
+          let students = `[
+        {
+          "name": "John",
+          "age": 30,
+          "city": "New York",
+          "hasChildren": true
+        },
+        {
+          "name": "Mike",
+          "age": 32,
+          "city": "Las Vegas",
+          "hasChildren": false
+        }
+      ]`
+
+      console.log(JSON.parse(students)[1].hasChildren);
+    </script>
+  </body>
+</html>
